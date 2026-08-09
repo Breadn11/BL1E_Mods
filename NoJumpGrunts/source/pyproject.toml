@@ -5,6 +5,7 @@ version = "2.2.1"
 description = "Mutes the grunts when jumping and/or landing."
 
 [tool.sdkmod]
+name = "No Jump Grunts"
 mod_type = "Standard"
 supported_games = ["BL1", "BL1E"]
 coop_support = "ClientSide"
