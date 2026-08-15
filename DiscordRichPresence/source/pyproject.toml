@@ -10,3 +10,4 @@ mod_type = "Standard"
 supported_games = ["BL1", "BL1E"]
 coop_support = "ClientSide"
 auto_enable = true
+download = "https://github.com/Breadn11/BL1E_Mods/raw/refs/heads/main/DiscordRichPresence/packaged/DiscordRichPresence.sdkmod"
