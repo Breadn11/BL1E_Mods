@@ -1,0 +1,12 @@
+[project]
+name = "DiscordRichPresence"
+authors = [{ name = "Breadn" }]
+version = "1.0.0"
+description = "Shows your current class, level, and map on your Discord profile while playing."
+
+[tool.sdkmod]
+name = "Discord Rich Presence"
+mod_type = "Standard"
+supported_games = ["BL1", "BL1E"]
+coop_support = "ClientSide"
+auto_enable = true
