@@ -58,8 +58,8 @@ MAP_NAMES = {
 }
 
 CHARACTER_CLASSES = {
-    "gd_brick.character.characterclass_brick": "Berserker",
-    "gd_lilith.character.characterclass_lilith": "Siren",
-    "gd_mordecai.character.characterclass_mordecai": "Hunter",
-    "gd_roland.character.characterclass_roland": "Soldier",
+    "CharacterClass_Brick": "Berserker",
+    "CharacterClass_Lilith": "Siren",
+    "CharacterClass_Mordecai": "Hunter",
+    "CharacterClass_Roland": "Soldier",
 }

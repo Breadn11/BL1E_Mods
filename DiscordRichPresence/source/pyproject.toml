@@ -1,8 +1,8 @@
 [project]
 name = "DiscordRichPresence"
 authors = [{ name = "Breadn" }]
-version = "1.0.0"
-description = "Shows your current class, level, and map on your Discord profile while playing."
+version = "1.1.0"
+description = "Shows your current class, level, and map on your Discord profile while playing.\n\nUpdates every 15 seconds."
 
 [tool.sdkmod]
 name = "Discord Rich Presence"
