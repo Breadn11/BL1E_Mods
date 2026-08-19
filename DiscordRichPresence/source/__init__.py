@@ -1,7 +1,7 @@
 from mods_base import build_mod, hook, get_pc
 from ui_utils import TrainingBox
 from .pypresence import Presence
-from .options import optTitle_Storage, optTitle_OptionBox, optTitle_OptionBoxOpener
+from .options import optTitle_Storage, optTitle_OptionBoxOpener
 from .dictionary import *
 from .globals import *
 
@@ -34,8 +34,10 @@ def hook_FrontendStart(obj, args, ret, func):
 
 @hook('WillowGame.WillowPlayerController:ExpLevelUp')
 def hook_ExpLevelUp(obj, args, ret, func):
-    Globals.stat_level = str(get_pc().GetPlayerBodyPawn().GetExpLevel() + 1)
-    Globals.RPC_updateQueued = True
+    PC = get_pc()
+    if obj == PC:
+        Globals.stat_level = str(PC.GetPlayerBodyPawn().GetExpLevel() + 1)
+        Globals.RPC_updateQueued = True
 
 def RPC_update():
     if Globals.inMenuMap == True:
@@ -52,7 +54,7 @@ def RPC_update():
 
 disableWarning = TrainingBox(
     title = 'WARNING',
-    message = 'Please restart your game if you wish to re-enable the mod.',
+    message = 'Please restart your game before re-enabling the mod.',
     min_duration = 2
 )
 
